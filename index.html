@@ -1,76 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Personal Website</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f8f8f8;
-      padding: 20px;
-    }
-    .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px;
-    }
-    .header h1 {
-      font-size: 30px;
-      margin: 0;
-    }
-    .header img {
-      width: 200px;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 50%;
-    }
-    .ribbon {
-      background-color: orange;
-      color: #fff;
-      padding: 10px;
-    }
-    .about-me {
-      padding: 50px;
-    }
-    .about-me img {
-      width: 300px;
-      height: 300px;
-      object-fit: cover;
-      margin: 20px;
-    }
-    .contact-bar {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio - Vicky Ye</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div class="header">
-    <h1>Vicky Ye</h1>
-    <img src="profile-picture.jpg" alt="Profile Picture">
+<div id="header">
+  <div class="container">
+    <nav>
+      <!-- <img src="images/logo.png" class="logo"> -->
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Resume</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-text">
+      <p>TITLE</p>
+       <!-- when adding text here make sure there are enough line breaks-->
+      <h1>Hi, I'm <span>Vicky</span> Ye <br> From Seattle</h1>
   </div>
-  <div class="ribbon">
-    <h2>About Me</h2> 
-  </div>
-
-  <div class="about-me">
-    <p>Add your introduction text here.</p>
-    <img src="image1.jpg" alt="Image 1">
-    <img src="image2.jpg" alt="Image 2">
-  </div>
-
-  <div class="contact-bar">
-    <h2>Contact</h2>
-    <p>Email: ye.c.vicky@gmail.com</p>
-  </div>
-
-  <footer>
-    &copy; 2023 Vicky Ye
-  </footer>
-
-  <!-- Add more sections as needed -->
+</div>
 
 </body>
 </html>
