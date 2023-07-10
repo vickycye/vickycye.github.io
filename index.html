@@ -6,24 +6,81 @@
 </head>
 
 <body>
-<div id="header">
-  <div class="container">
-    <nav>
-      <!-- <img src="images/logo.png" class="logo"> -->
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Resume</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="header-text">
-      <p>TITLE</p>
-       <!-- when adding text here make sure there are enough line breaks-->
-      <h1>Hi, I'm <span>Vicky</span> Ye <br> From Seattle</h1>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo.png" class="logo">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Resume</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-text">
+        <p>TITLE</p>
+        <!-- when adding text here make sure there are enough line breaks-->
+        <h1>Hi, I'm <span>Vicky</span> Ye <br> From Seattle</h1>
+    </div>
   </div>
 </div>
+
+
+<!-- ------------------about---------------- -->
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="images/user.png">
+      </div>   
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('experience')">Experience</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills"> <!-- skills -->
+          <ul>
+            <li><span>Applications</span><br>Microsoft Office, Adobe CC</li>
+            <li><span>Programming Languages</span><br>Python, Java, JS, C++, C#, HTML, CSS</li>
+            <li><span>Languages</span><br>English, Mandarin Chinese, Spanish</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="experience"> <!-- experience -->
+          <ul>
+            <li><span>2021 - Current</span><br>Swim instructor at Cyan Swim Academy</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education"> <!-- education -->
+          <ul>
+            <li><span>High School</span><br>Cambridge Program @ Juanita High School</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+  function opentab(tabname){ // hide the minitabs when clicking on an about me tab
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+
+</script>
 
 </body>
 </html>
