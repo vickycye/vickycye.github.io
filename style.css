@@ -340,7 +340,7 @@ nav .fa-sharp{
     }
     nav .fa-sharp{
         display: block;
-        font-size: 25px;
+        font-size: 50px;
     }
     nav ul{
         background:#f49f0b;
@@ -356,6 +356,9 @@ nav .fa-sharp{
     nav ul li{
         display: block;
         margin: 25px;
+    }
+    nav ul li a{
+        font-size: 35px;
     }
     nav ul .fa-sharp{
         position: absolute;
