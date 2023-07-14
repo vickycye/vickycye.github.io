@@ -355,7 +355,9 @@ nav .fa-sharp{
     }
     nav ul li{
         display: block;
-        margin: 25px;
+        margin-right: 30px;
+        margin-left: 30px;
+        margin-top: 40px;
     }
     nav ul li a{
         font-size: 35px;
@@ -367,7 +369,7 @@ nav .fa-sharp{
         cursor: pointer;
     }
     .sub-title{
-        font-size: 60px;
+        font-size: 80px;
     }
     .about-col-1, .about-col-2{
         flex-basis: 100%;
@@ -376,12 +378,18 @@ nav .fa-sharp{
         margin-bottom: 35px;
     }
     .about-col-2{
-        font-size: 20px;
+        font-size: 25px;
     }
     .tab-links{
-        font-size: 24px;
+        font-size: 40px;
         margin-top: 20px;
         margin-right: 20px;
+    }
+    .tab-contents{
+        font-size: 40px;
+    }
+    .tab-contents ul li span{
+        font-size: 30px;
     }
     .contact-left, .contact-right{
         flex-basis: 100%;
